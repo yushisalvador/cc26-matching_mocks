@@ -4,28 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Matching Mocks</title>
   </head>
   <body>
-    <h1>New Account</h1>
-    <form>
-      <label for="name"> Name </label>
-      <br />
-      <input type="text" />
-      <br />
-      <label for="email"> Email</label>
-      <br />
-      <input type="text" />
-      <br />
-      <label for="password"> Password </label>
-      <br />
-      <input type="password" />
-      <p>12 or more combination of letters, numbers, and symbols</p>
-      <label for="repeat password"> Password (again)</label>
-      <br />
-      <input type="password" />
-      <button type="submit">Create Account</button>
-      <p><a href="#">Already have an account?Sign in</a></p>
-    </form>
+    <div class="container">
+      <header>
+        <h1>New Account</h1>
+      </header>
+      <form>
+        <label for="name" id="name"> Name </label>
+        <br />
+        <input type="text" class="box" />
+        <br />
+        <label for="email" id="email"> Email</label>
+        <br />
+        <input type="text" class="box" />
+        <br />
+        <label for="password" id="password"> Password </label>
+        <br />
+        <input type="password" class="pass box" placeholder="••••••" />
+        <p class="pass">
+          12 or more combination of letters, numbers, and symbols
+        </p>
+        <label for="repeatpassword" id="repeatpassword">
+          Password (again)</label
+        >
+        <br />
+        <input type="password" class="pass-box" />
+        <br />
+
+        <button type="submit" id="submitButton">Create Account</button>
+        <p class="sign-in"><a href="#">Already have an account?Sign in</a></p>
+      </form>
+    </div>
   </body>
 </html>
